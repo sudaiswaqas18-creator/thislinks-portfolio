@@ -1,0 +1,314 @@
+/* ====== SIGNUP PAGE - FULL BACKGROUND ====== */
+.signup-page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  /* Background image from inline style, gradient here */
+  background: linear-gradient(
+    153.84deg,
+    #025c13,
+    #0db82c 31.77%,
+    #06c428 50.1%,
+    #0ba226 66.8%,
+    #006a13 83.53%
+  );
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+/* ====== BACKGROUND CONTENT - LEFT SIDE ====== */
+.signup-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  padding: 4rem 3rem 3rem 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  z-index: 1;
+}
+
+/* ====== LOGO ====== */
+.logo-container {
+  margin-bottom: 2rem;
+}
+
+.logo {
+  width: 280px;
+  height: auto;
+  display: block;
+}
+
+/* ====== SLIDER CONTENT ====== */
+.slider-content {
+  color: #ffffff;
+  max-width: 500px;
+}
+
+.slider-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 1.5rem;
+  line-height: 1.2;
+  transition: opacity 0.5s ease;
+}
+
+.slider-description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+  margin: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* ====== SLIDER DOTS ====== */
+.slider-dots {
+  display: flex;
+  gap: 1rem;
+}
+
+.dot {
+  width: 50px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.dot.active {
+  background: #ffffff;
+  width: 80px;
+}
+
+.dot:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* ====== SIGNUP CARD WRAPPER - RIGHT SIDE ====== */
+.signup-card-wrapper {
+  position: relative;
+  z-index: 10;
+  margin-left: auto;
+  width: 100%;
+  max-width: 580px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-card {
+  width: 100%;
+  background: #ffffff;
+  padding: 2.5rem 3rem;
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* ====== EMAIL ICON ====== */
+.email-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.email-icon-circle {
+  width: 70px;
+  height: 70px;
+  background: #d1fae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-icon {
+  width: 32px;
+  height: 32px;
+  color: #16a34a;
+}
+
+/* ====== FORM HEADER ====== */
+.form-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 0.5rem;
+  line-height: 1.3;
+}
+
+.form-subtitle {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* ====== FORM GROUPS ====== */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #111827;
+  transition: all 0.3s ease;
+  background: #ffffff;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #16a34a;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
+}
+
+/* ====== ERROR STYLES ====== */
+.form-input.error {
+  border-color: #dc2626;
+}
+
+.form-input.error:focus {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+.error-message {
+  display: block;
+  font-size: 0.85rem;
+  color: #dc2626;
+  margin-top: 0.25rem;
+}
+
+/* ====== SUBMIT BUTTON ====== */
+.submit-button {
+  width: 100%;
+  padding: 1rem;
+  background: #16a34a;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submit-button:hover {
+  background: #15803d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(22, 163, 74, 0.3);
+}
+
+/* ====== LOGIN LINK ====== */
+.login-link {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-top: 1rem;
+}
+
+.login-link a {
+  color: #16a34a;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  margin-left: 0.3rem;
+}
+
+.login-link a:hover {
+  color: #15803d;
+  text-decoration: underline;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 1024px) {
+  .signup-background {
+    width: 40%;
+    padding: 3rem 2rem;
+  }
+
+  .slider-title {
+    font-size: 2.5rem;
+  }
+
+  .logo {
+    width: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .signup-page {
+    padding: 1.5rem;
+  }
+
+  .signup-background {
+    display: none;
+  }
+
+  .signup-card-wrapper {
+    margin: 0 auto;
+  }
+
+  .signup-card {
+    padding: 2.5rem 2rem;
+  }
+
+  .form-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
+
+  .email-icon-circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .email-icon {
+    width: 28px;
+    height: 28px;
+  }
+}

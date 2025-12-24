@@ -1,0 +1,214 @@
+/* ====== DASHBOARD PAGE ====== */
+.dashboard-page {
+  width: 100%;
+  min-height: 100%;
+}
+
+/* ====== DASHBOARD HEADER ====== */
+.dashboard-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.dashboard-title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f1f1f;
+  letter-spacing: -0.5px;
+}
+
+/* ====== STATS GRID ====== */
+.dashboard-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* ====== STAT CARD ====== */
+.dashboard-stat-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.dashboard-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* ====== ICON BOX ====== */
+.stat-icon-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  /* Gradient applied via inline style */
+  box-shadow: 0 4px 12px rgba(0, 176, 155, 0.25);
+}
+
+.stat-icon {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* Makes SVG white */
+}
+
+/* ====== STAT CONTENT ====== */
+.stat-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.stat-title {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #6b7280;
+  letter-spacing: 0.2px;
+}
+
+.stat-value {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f1f1f;
+  line-height: 1;
+}
+/* ====== CALENDAR AND TASKS SECTION ====== */
+.dashboard-calendar-tasks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* ====== FAULTS MANAGEMENT SECTION ====== */
+.dashboard-faults-section {
+  margin-top: 1.5rem;
+  max-width: 100%;
+}
+
+/* ====== RESPONSIVE ADJUSTMENTS ====== */
+@media (max-width: 768px) {
+  .dashboard-faults-section {
+    margin-top: 1.25rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .dashboard-calendar-tasks {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 1400px) {
+  .dashboard-stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+
+  .dashboard-stat-card {
+    /* padding: 1.25rem; */
+  }
+
+  .stat-icon-box {
+    width: 70px;
+    height: 70px;
+  }
+
+  .stat-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .stat-value {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .dashboard-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .stat-value {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-title {
+    font-size: 1.75rem;
+  }
+
+  .dashboard-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .dashboard-stat-card {
+    padding: 1.25rem;
+  }
+
+  .stat-icon-box {
+    width: 65px;
+    height: 65px;
+  }
+
+  .stat-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .stat-value {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .dashboard-title {
+    font-size: 1.5rem;
+  }
+
+  .dashboard-stat-card {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .stat-icon-box {
+    width: 60px;
+    height: 60px;
+  }
+
+  .stat-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .stat-title {
+    font-size: 0.875rem;
+  }
+
+  .stat-value {
+    font-size: 1.75rem;
+  }
+}

@@ -1,0 +1,153 @@
+/* ====== FAULTS MANAGEMENT CONTAINER ====== */
+.faults-management {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ====== SECTION TITLE ====== */
+.faults-title {
+  margin: 0;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #111827;
+  text-align: center;
+  letter-spacing: -0.025em;
+}
+
+/* ====== FAULTS GRID ====== */
+.faults-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+/* ====== FAULT STAT CARD ====== */
+.fault-stat-card {
+     background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .2s;
+}
+
+.fault-stat-card:hover {
+box-shadow: 0 4px 12px #06c3284d;
+    border: 1px solid #06c328;
+}
+
+/* ====== FAULT LABEL ====== */
+.fault-label {
+  margin: 0;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+/* ====== FAULT VALUE ====== */
+.fault-value {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1;
+}
+
+/* ====== VIEW FAULTS BUTTON ====== */
+.view-faults-btn {
+  width: 100%;
+  background: linear-gradient(90deg, rgb(0, 176, 155), rgb(6, 195, 40));
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.875rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  letter-spacing: 0.01em;
+  box-shadow: 0 2px 8px rgba(0, 176, 155, 0.25);
+}
+
+.view-faults-btn:hover {
+  background: linear-gradient(90deg, rgb(0, 158, 140), rgb(5, 176, 36));
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 176, 155, 0.35);
+}
+
+.view-faults-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 176, 155, 0.25);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .faults-management {
+    padding: 1.5rem;
+    gap: 1.25rem;
+  }
+
+  .faults-title {
+    font-size: 1.25rem;
+  }
+
+  .faults-grid {
+    gap: 0.875rem;
+  }
+
+  .fault-stat-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .fault-label {
+    font-size: 0.875rem;
+  }
+
+  .fault-value {
+    font-size: 1.75rem;
+  }
+
+  .view-faults-btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9375rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faults-management {
+    padding: 1.25rem;
+  }
+
+  .faults-title {
+    font-size: 1.125rem;
+  }
+
+  .faults-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .fault-stat-card {
+    padding: 1rem;
+  }
+
+  .fault-value {
+    font-size: 1.5rem;
+  }
+
+  .view-faults-btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+  }
+}
